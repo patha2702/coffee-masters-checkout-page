@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee shop checkout page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="Coffee Masters logo" class="headerLogo">
+        <span>Coffee Masters</span>
+    </header>
+    <div class="container">
+        <section class="ItemsContainer">
+            <span class="sectionTitle">ITEMS</span>    
+            <ul class="ItemsContainer__itemsList">
+
+                <li class="ItemsContainer__item">
+                    <span class="ItemsContainer__item-quantity">1x</span>
+                    <span class="ItemsContainer__itemNameContainer">
+                        <span class="ItemsContainer__itemName">Cappuccino</span>
+                        <span class="ItemsContainer__itemSpecific">Lite foam</span>
+                    </span>
+                    <span class="ItemContainer__itemPrice">$3.35</span>
+                </li>
+                <li class="ItemsContainer__item">
+                    <span class="ItemsContainer__item-quantity">1x</span>
+                    <span class="ItemsContainer__itemNameContainer">
+                        <span class="ItemsContainer__itemName">Cappuccino</span>
+                        <span class="ItemsContainer__itemSpecific">Lite milk</span>
+                        <span class="ItemsContainer__itemSpecific">Double expresso</span>
+                    </span>
+                    <span class="ItemContainer__itemPrice">$3.85</span>
+                </li>
+                <li class="ItemsContainer__item">
+                    <span class="ItemsContainer__item-quantity">1x</span>
+                    <span class="ItemsContainer__itemNameContainer">
+                        <span class="ItemsContainer__itemName">Croissant</span>
+                        <span class="ItemsContainer__itemSpecific">Butter</span>
+                    </span>
+                    <span class="ItemContainer__itemPrice">$2.45</span>
+                </li>
+            </ul>    
+        </section>
+
+        <section class="UserInfoContainer">
+            <span class="sectionTitle">NAME</span>
+            <fieldset class="FieldsetContainer">
+                <legend>Name for order</legend>
+                <input type="text">
+            </fieldset>
+        </section>
+
+        <section class="CardInfoContainer">
+            <span class="sectionTitle">PAYMENT</span>
+            <fieldset class="FieldsetContainer">
+                <legend>Card number</legend>
+                <input type="number">
+            </fieldset>
+            <fieldset class="FieldsetContainer">
+                <legend>CCV Number</legend>
+                <input type="number" size="3">
+            </fieldset>
+        </section>
+
+        <section class="BillContainer">
+            <ul class="BillContainer__list">
+                <li class="BillContainer__listItem">
+                    <span class="BillContainer__listItemProperty">Subtotal:</span>
+                    <span class="BillContainer__listItemValue">$9.65</span>
+                </li>
+                <li class="BillContainer__listItem">
+                    <span class="BillContainer__listItemProperty">Tax:</span>
+                    <span class="BillContainer__listItemValue">$0.82</span>
+                </li>
+                <li class="BillContainer__listItem">
+                    <span class="BillContainer__listItemProperty">Total:</span>
+                    <span class="BillContainer__listItemValue">$10.47</span>
+                </li>
+            </ul>
+        </section>
+        <button class="btn">Place order</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+header{
+    width: 100%;
+    padding-block: 1em;
+    background-color: #432213;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+    color: #f8f9bd;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.container{
+    padding: 2em 1em 1em 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+     "ItemsContainer UserInfoContainer"
+     "ItemsContainer CardInfoContainer"
+     "... ..."
+     "BillContainer BillContainer"
+     "btn btn";
+    row-gap: 0.8em;
+    column-gap: 1em;
+    background-color: #efeff0;
+}
+
+.ItemsContainer{
+    grid-area: ItemsContainer;
+    padding: 0.5em;
+}
+
+.ItemsContainer__itemsList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.ItemsContainer__item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+.ItemsContainer__item-quantity{
+    font-size: 0.8rem;
+}
+
+.ItemContainer__itemPrice{
+    margin-left: auto;
+    margin-right: 2em;
+}
+
+
+.ItemsContainer__itemNameContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.ItemsContainer__itemSpecific{
+    color: #9a7751;
+    font-size: 0.8rem;
+}
+
+.UserInfoContainer{
+    grid-area: UserInfoContainer;
+}
+
+.CardInfoContainer{
+    grid-area: CardInfoContainer;
+}
+
+.BillContainer{
+    grid-area: BillContainer;
+    width: 50%;
+    margin: 2em auto;
+}
+
+.BillContainer__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    list-style: none;
+}
+
+
+.BillContainer__listItem{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    grid-area: btn;
+    display: block;
+    width: 95%;
+    padding-block: 0.8em;
+    margin: 0 auto;
+    background-color: #dfbc90;
+    border-radius: 25px;
+    border: none;
+    color: #475134;
+    font-weight: 700;
+}
+
+.CardInfoContainer,
+.ItemsContainer,
+.UserInfoContainer{
+    padding: 1em;
+    border-radius: 7px;
+    height: fit-content;
+    background-color: #eee2d4;
+    box-shadow: 2px 3px #dddada;
+}
+
+.sectionTitle{
+    display: inline-block;
+    margin-bottom: 1em;
+    color: #9a7751;
+}
+
+.FieldsetContainer{
+    margin-bottom: 1em;
+    padding: 0.3em 2em 0.6em 2em;
+    border-radius: 25px;
+    border: 1.5px solid #855018;
+}
+
+legend{
+    font-size: 0.8em;
+    margin-left: 0.1em;
+    padding: 0.1em;
+    color: #9a7751;
+}
+
+input{
+    font-family: inherit;
+    border: none;
+    background-color: inherit;
+    padding: 0.1em;
+}
+
+input:focus,
+input:active{
+    border: none;
+}
+
+/* Header Logo */
+
+.headerLogo{
+    max-width: 30px;
+    max-height: 30px;
+}
