@@ -59,6 +59,11 @@ header{
     align-items: baseline;
     gap: 1em;
     padding: 0.5em;
+    border-bottom: 2px solid #e7ceb2;
+}
+
+.ItemsContainer__item:last-child{
+    border-bottom: none;
 }
 
 .ItemsContainer__item-quantity{
@@ -75,6 +80,11 @@ header{
     display: flex;
     flex-direction: column;
     gap: 0.4em;
+}
+
+.ItemContainer__itemPrice,
+.ItemsContainer__itemName{
+    font-weight: 700;
 }
 
 .ItemsContainer__itemSpecific{
@@ -112,6 +122,10 @@ header{
     justify-content: space-between;
 }
 
+.BillContainer__listItem:last-child{
+    font-weight: 700;
+}
+
 .btn{
     grid-area: btn;
     display: block;
@@ -137,7 +151,7 @@ header{
 
 .sectionTitle{
     display: inline-block;
-    margin-bottom: 1em;
+    margin: 0 0 1em 0.5em;
     color: #9a7751;
 }
 
@@ -146,6 +160,10 @@ header{
     padding: 0.3em 2em 0.6em 2em;
     border-radius: 25px;
     border: 1.5px solid #855018;
+}
+
+.FieldsetContainer--widthPerc20{
+    width: 20%;
 }
 
 legend{
